@@ -1,4 +1,52 @@
-
 body {
     font-family: 'Open Sans Variable', sans-serif;
+}
+
+nav {
+    font-size: .75rem;
+
+    img {
+        width: 5rem;
+    }
+
+    ul li a {
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+        border-bottom: 0.25rem solid transparent;
+
+        &:hover {
+            color: rgb(56, 128, 240);
+            border-bottom: 0.25rem solid rgb(56, 128, 240);
+        }
+    }
+}
+
+main {
+    background-color: rgb(28, 28, 28);
+}
+
+footer {
+    background-color: rgb(28, 28, 28);
+    background-image: url(./img/footer-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(150, 150, 150);
+
+    .container {
+        background-image: url(./img/dc-logo-bg.png);
+        background-position: right center;
+        background-size: auto 150%;
+        background-repeat: no-repeat;
+    }
+
+    ul li {
+
+        font-size: .75rem;
+
+        a {
+            color: rgb(150, 150, 150);
+        }
+    }
+
 }

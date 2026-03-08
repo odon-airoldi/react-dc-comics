@@ -4,13 +4,8 @@ export default function AppMain() {
 
     return (
         <main>
-            <div className="row row-cols-6">
-                <div>col</div>
-                <div>col</div>
-                <div>col</div>
-                <div>col</div>
-                <div>col</div>
-                <div>col</div>
+            <div className="container py-5">
+                <h1 className="h5 text-white">Content goes here</h1>
             </div>
         </main>
     )
