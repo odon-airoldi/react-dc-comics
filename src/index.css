@@ -14,7 +14,7 @@ nav {
         font-weight: 500;
         border-bottom: 0.25rem solid transparent;
 
-        &:hover {
+        &.active, &:hover {
             color: rgb(56, 128, 240);
             border-bottom: 0.25rem solid rgb(56, 128, 240);
         }

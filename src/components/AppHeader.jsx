@@ -2,6 +2,69 @@ import logo from '../img/dc-logo.png'
 
 
 
+const nav_ul = [
+    {
+        id: '1',
+        text: 'Character',
+        url: '#',
+        active: false
+    },
+    {
+        id: '2',
+        text: 'Comics',
+        url: '#',
+        active: true
+    },
+    {
+        id: '3',
+        text: 'Movie',
+        url: '#',
+        active: false
+    },
+    {
+        id: '4',
+        text: 'Tv',
+        url: '#',
+        active: false
+    },
+    {
+        id: '5',
+        text: 'Games',
+        url: '#',
+        active: false
+    },
+    {
+        id: '6',
+        text: 'Collectibles',
+        url: '#',
+        active: false
+    },
+    {
+        id: '7',
+        text: 'Videos',
+        url: '#',
+        active: false
+    },
+    {
+        id: '8',
+        text: 'Fans',
+        url: '#',
+        active: false
+    },
+    {
+        id: '9',
+        text: 'News',
+        url: '#',
+        active: false
+    },
+    {
+        id: '10',
+        text: 'Shop',
+        url: '#',
+        active: false
+    }
+]
+
 export default function AppHeader() {
 
     return (
@@ -12,40 +75,18 @@ export default function AppHeader() {
                         <img src={logo} alt="" />
                     </a>
                     <ul className="d-flex text-uppercase list-unstyled mb-0">
-                        <li className="col-auto px-3">
-                            <a className="text-decoration-none d-flex align-items-center h-100" href="#">Character</a>
-                        </li>
-                        <li className="col-auto px-3">
-                            <a className="text-decoration-none d-flex align-items-center h-100" href="#">Comics</a>
-                        </li>
-                        <li className="col-auto px-3">
-                            <a className="text-decoration-none d-flex align-items-center h-100" href="#">Movie</a>
-                        </li>
-                        <li className="col-auto px-3">
-                            <a className="text-decoration-none d-flex align-items-center h-100" hef="#">Tv</a>
-                        </li>
-                        <li className="col-auto px-3">
-                            <a className="text-decoration-none d-flex align-items-center h-100" hef="#">Games</a>
-                        </li>
-                        <li className="col-auto px-3">
-                            <a className="text-decoration-none d-flex align-items-center h-100" hef="#">Collectibles</a>
-                        </li>
-                        <li className="col-auto px-3">
-                            <a className="text-decoration-none d-flex align-items-center h-100" hef="#">Videos</a>
-                        </li>
-                        <li className="col-auto px-3">
-                            <a className="text-decoration-none d-flex align-items-center h-100" hef="#">Fans</a>
-                        </li>
-                        <li className="col-auto px-3">
-                            <a className="text-decoration-none d-flex align-items-center h-100" hef="#">News</a>
-                        </li>
-                        <li className="col-auto px-3">
-                            <a className="text-decoration-none d-flex align-items-center h-100" hef="#">Shop</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+                        {
+                            nav_ul.map(nav_li => (
+                                <li className="col-auto px-3" key={nav_li.id}>
+                                    <a className={`text-decoration-none d-flex align-items-center h-100 ${nav_li.active ? 'active' : ''}`} href={nav_li.url}>{nav_li.text}</a>
+                                </li>
+                    ))
+                        }
+
+                </ul>
+            </nav>
+        </div>
+        </header >
     )
 
 } 
