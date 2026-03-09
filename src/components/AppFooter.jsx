@@ -1,10 +1,38 @@
+const footer_social = [
+    {
+        id: 'Facebook',
+        url: '#',
+        img: './src/img/footer-facebook.png'
+    },
+    {
+        id: 'Periscope',
+        url: '#',
+        img: './src/img/footer-periscope.png'
+    },
+    {
+        id: 'Pinterest',
+        url: '#',
+        img: './src/img/footer-pinterest.png'
+    },
+    {
+        id: 'Twitter',
+        url: '#',
+        img: './src/img/footer-twitter.png'
+    },
+    {
+        id: 'Youtube',
+        url: '#',
+        img: './src/img/footer-youtube.png'
+    }
+
+]
+
+
 export default function AppFooter() {
-
-
 
     return (
         <footer>
-            <div className="container py-5">
+            <div className="container footer-main py-5">
                 <div className="row">
                     <div className="col-2">
                         <h3 className="text-uppercase text-white h6">Dc Comincs</h3>
@@ -48,6 +76,27 @@ export default function AppFooter() {
                             <li><a hfer="#">DC Universe</a></li>
                             <li><a hfer="#">DC Power Visa</a></li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div className="footer-social py-4">
+                <div className="container">
+                    <div className="d-flex justify-content-between">
+                        <a className="" href="#">Sign-up now!</a>
+                        <div className="d-flex align-items-center">
+                            <h3 className="text-uppercase text-white h6 mb-0 mx-2">Follow Us</h3>
+                            <ul className="d-flex list-unstyled mb-0">
+                                {
+                                    footer_social.map(social => (
+                                        <li className="mx-2" key={social.id}>
+                                            <a href={social.url}>
+                                                <img src={social.img} alt={social.id} />
+                                            </a>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

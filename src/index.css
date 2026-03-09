@@ -33,11 +33,15 @@ footer {
     background-repeat: no-repeat;
     color: rgb(150, 150, 150);
 
-    .container {
+    .footer-main {
         background-image: url(./img/dc-logo-bg.png);
         background-position: right center;
         background-size: auto 150%;
         background-repeat: no-repeat;
+    }
+
+    .footer-social {
+        background-color: rgb(48, 48, 48);
     }
 
     ul li {
