@@ -8,16 +8,26 @@ img {
     max-width: 100%;
 }
 
+.dc-btn {
+    text-decoration: none;
+    display: inline-block;
+}
+
 .btn-outline {
     border: 2px solid rgb(56, 128, 240);
 }
 
+.btn-light-blue,
 .bg-light-blue {
     background-color: rgb(56, 128, 240);
 }
 
 .bg-dark-grey {
     background-color: rgb(28, 28, 28)
+}
+
+.object-position-top-center {
+    object-position: top center;
 }
 
 /* Header */
@@ -46,7 +56,6 @@ nav {
 
 .section-header {
     max-height: 25rem;
-    object-fit: cover;
     overflow: hidden;
 }
 

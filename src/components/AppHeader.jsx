@@ -23,7 +23,7 @@ const nav_ul = [
     },
     {
         id: '4',
-        text: 'Tv',
+        text: 'TV',
         url: '#',
         active: false
     },
@@ -82,7 +82,6 @@ export default function AppHeader() {
                                 </li>
                             ))
                         }
-
                     </ul>
                 </nav>
             </div>

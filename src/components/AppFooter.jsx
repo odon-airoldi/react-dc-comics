@@ -27,8 +27,6 @@ const footer_social = [
 
 ]
 
-
-
 export default function AppFooter() {
 
     return (
