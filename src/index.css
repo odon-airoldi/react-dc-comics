@@ -4,8 +4,20 @@ body {
 
 /* Utililyes */
 
+img {
+    max-width: 100%;
+}
+
 .btn-outline {
     border: 2px solid rgb(56, 128, 240);
+}
+
+.bg-light-blue {
+    background-color: rgb(56, 128, 240);
+}
+
+.bg-dark-grey {
+    background-color: rgb(28, 28, 28)
 }
 
 /* Header */
@@ -32,8 +44,10 @@ nav {
 
 /* Main */
 
-main {
-    background-color: rgb(28, 28, 28);
+.section-header {
+    max-height: 25rem;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 /* Footer */
@@ -69,8 +83,6 @@ footer {
 }
 
 .section-featured-link {
-
-    background-color: rgb(56, 128, 240);
 
     .featured-link {
 

@@ -34,7 +34,7 @@ const featured_links = [
 export default function AppSectionFeatured() {
 
     return (
-        <section className="section-featured-link">
+        <section className="section-featured-link bg-light-blue">
             <div className="container">
                 <div className="row row-cols-5 py-5">
 
