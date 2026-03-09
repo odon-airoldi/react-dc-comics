@@ -14,7 +14,8 @@ nav {
         font-weight: 500;
         border-bottom: 0.25rem solid transparent;
 
-        &.active, &:hover {
+        &.active,
+        &:hover {
             color: rgb(56, 128, 240);
             border-bottom: 0.25rem solid rgb(56, 128, 240);
         }
@@ -51,6 +52,26 @@ footer {
         a {
             color: rgb(150, 150, 150);
         }
+    }
+
+}
+
+.section-featured {
+
+    background-color: rgb(56, 128, 240);
+
+    .featured {
+
+        img {
+            height: 3.5rem;
+        }
+
+        &:last-of-type img {
+
+            height: 2.5rem;
+
+        }
+
     }
 
 }

@@ -80,12 +80,12 @@ export default function AppHeader() {
                                 <li className="col-auto px-3" key={nav_li.id}>
                                     <a className={`text-decoration-none d-flex align-items-center h-100 ${nav_li.active ? 'active' : ''}`} href={nav_li.url}>{nav_li.text}</a>
                                 </li>
-                    ))
+                            ))
                         }
 
-                </ul>
-            </nav>
-        </div>
+                    </ul>
+                </nav>
+            </div>
         </header >
     )
 
