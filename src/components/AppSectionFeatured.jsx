@@ -34,14 +34,14 @@ const featured_links = [
 export default function AppSectionFeatured() {
 
     return (
-        <section className="section-featured">
-            <div className="container py-5">
-                <div className="row row-cols-5">
+        <section className="section-featured-link">
+            <div className="container">
+                <div className="row row-cols-5 py-5">
 
                     {
                         featured_links.map(link => (
 
-                            <a className="featured d-flex align-items-center text-white text-decoration-none" key={link.id} href={link.url}>
+                            <a className="featured-link d-flex align-items-center text-white text-decoration-none" key={link.id} href={link.url}>
                                 <img src={link.img} alt={link.text} />
                                 <div className="text-uppercase small ms-2">{link.text}</div>
                             </a>

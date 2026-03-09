@@ -2,6 +2,14 @@ body {
     font-family: 'Open Sans Variable', sans-serif;
 }
 
+/* Utililyes */
+
+.btn-outline {
+    border: 2px solid rgb(56, 128, 240);
+}
+
+/* Header */
+
 nav {
     font-size: .75rem;
 
@@ -22,9 +30,13 @@ nav {
     }
 }
 
+/* Main */
+
 main {
     background-color: rgb(28, 28, 28);
 }
+
+/* Footer */
 
 footer {
     background-color: rgb(28, 28, 28);
@@ -56,11 +68,11 @@ footer {
 
 }
 
-.section-featured {
+.section-featured-link {
 
     background-color: rgb(56, 128, 240);
 
-    .featured {
+    .featured-link {
 
         img {
             height: 3.5rem;
