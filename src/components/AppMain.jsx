@@ -1,5 +1,6 @@
 import comics from '../data/comics'
 import comics_header from '../img/jumbotron.jpg'
+import AppCard from './AppCard'
 
 export default function AppMain() {
 
@@ -12,7 +13,14 @@ export default function AppMain() {
                 <div className="container position-relative py-5">
                     <h1 className="h4 text-white text-uppercase bg-light-blue py-2 px-4 position-absolute top-0 translate-middle-y">Current Series</h1>
                     <div className="row row-cols-6 gy-5">
+
                         {
+                            comics.map(comic => (
+                                <AppCard id={comic.id} thumb={comic.thumb} series={comic.series} />
+                            ))
+                        }
+
+                        {/* {
                             comics.map(comic => (
                                 <div className="card-comic" key={comic.id}>
                                     <div className="ratio ratio-1x1 mb-3">
@@ -21,7 +29,7 @@ export default function AppMain() {
                                     <h2 className="small text-white text-uppercase mb-0">{comic.series}</h2>
                                 </div>
                             ))
-                        }
+                        } */}
                     </div>
                 </div>
                 <div className="d-flex align-items-center pb-4">
