@@ -1,16 +1,15 @@
 
 
-export default function AppCard(props) {
+export default function AppCard({ img, text }) {
 
-    console.log(props)
 
     return (
 
-        <div className="card-comic" key={props.id}>
+        <div className="card-comic">
             <div className="ratio ratio-1x1 mb-3">
-                <img className='object-fit-cover object-position-top-center' src={props.thumb} alt={props.series} />
+                <img className='object-fit-cover object-position-top-center' src={img} alt={text} />
             </div>
-            <h2 className="small text-white text-uppercase mb-0">{props.series}</h2>
+            <h2 className="small text-white text-uppercase mb-0">{text}</h2>
         </div>
 
     )

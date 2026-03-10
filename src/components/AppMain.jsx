@@ -14,9 +14,10 @@ export default function AppMain() {
                     <h1 className="h4 text-white text-uppercase bg-light-blue py-2 px-4 position-absolute top-0 translate-middle-y">Current Series</h1>
                     <div className="row row-cols-6 gy-5">
 
+
                         {
                             comics.map(comic => (
-                                <AppCard id={comic.id} thumb={comic.thumb} series={comic.series} />
+                                <AppCard key={comic.id} img={comic.thumb} text={comic.series} />
                             ))
                         }
 
