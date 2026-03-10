@@ -1,33 +1,4 @@
-const footer_social = [
-    {
-        id: 'Facebook',
-        url: '#',
-        img: './src/img/footer-facebook.png'
-    },
-    {
-        id: 'Periscope',
-        url: '#',
-        img: './src/img/footer-periscope.png'
-    },
-    {
-        id: 'Pinterest',
-        url: '#',
-        img: './src/img/footer-pinterest.png'
-    },
-    {
-        id: 'Twitter',
-        url: '#',
-        img: './src/img/footer-twitter.png'
-    },
-    {
-        id: 'Youtube',
-        url: '#',
-        img: './src/img/footer-youtube.png'
-    }
-
-]
-
-export default function AppFooter() {
+export default function AppFooter({ footer_social }) {
 
     return (
         <footer>

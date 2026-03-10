@@ -15,7 +15,7 @@ export default function AppHeader({ header_nav }) {
                         {
                             header_nav.map(nav_item => (
                                 <li className="col-auto px-3" key={nav_item.id}>
-                                    <a className={`text-decoration-none d-flex align-items-center h-100 ${nav_item.active ? 'active' : ''}`} href={nav_item.url}>{nav_item.text}</a>
+                                    <a className={`text-decoration-none d-flex align-items-center h-100 ${nav_item.active && 'active'}`} href={nav_item.url}>{nav_item.text}</a>
                                 </li>
                             ))
                         }
